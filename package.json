@@ -11,7 +11,8 @@
     "prettier:fix": "npx prettier ./ --write --ignore-path ./configs/prettier/.prettierignore --config ./configs/prettier/prettier.config.js",
     "format": "npm run prettier:fix && npm run lint:fix",
     "prepare": "husky",
-    "tsc": "npx tsc -p configs/ts/tsconfig.json"
+    "tsc": "npx tsc -p configs/ts/tsconfig.json",
+    "tsx": "npx tsx -p configs/ts/tsconfig.json"
   },
   "keywords": [
     "Yauhen Kavalchuk",
