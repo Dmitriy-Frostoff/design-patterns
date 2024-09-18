@@ -1,0 +1,41 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "### Описание курса: В данном видео-курсе мы с вами рассмотрим самые распространённые паттерны проектирования, которые используются при разработке.  Паттерны, или шаблоны - это определённые, зарекомендовавшие себя конструкции, которые служат для решения типовых задач программирования. Рассматривать мы их с вами будем на примере языка JavaScript в синтаксисе ES6.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "npx eslint ./ --ignore-path ./configs/eslint/.eslintignore --config ./configs/eslint/.eslintrc.cjs",
+    "lint:fix": "npx eslint ./ --ignore-path ./configs/eslint/.eslintignore --config ./configs/eslint/.eslintrc.cjs --fix",
+    "prettier": "npx prettier ./ --check --ignore-path ./configs/prettier/.prettierignore --config ./configs/prettier/prettier.config.js",
+    "prettier:fix": "npx prettier ./ --write --ignore-path ./configs/prettier/.prettierignore --config ./configs/prettier/prettier.config.js",
+    "format": "npm run prettier:fix && npm run lint:fix",
+    "prepare": "husky",
+    "tsc": "npx tsc -p configs/ts/tsconfig.json"
+  },
+  "keywords": [
+    "Yauhen Kavalchuk",
+    "design-patterns",
+    "OOP",
+    "OOP examples",
+    "TS"
+  ],
+  "author": "Yauhen Kavalchuk, Dmitriy Frostoff",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "husky": "^9.1.6",
+    "prettier": "^3.3.3",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  }
+}
