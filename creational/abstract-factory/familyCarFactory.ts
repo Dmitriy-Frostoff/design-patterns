@@ -1,5 +1,5 @@
 import I3 from './I3';
-import { ICar, ICarFactory } from './interfaces';
+import { ICar, ICarFactory } from './types';
 
 export default class FamilyCarFactory implements ICarFactory {
   produce(): ICar {

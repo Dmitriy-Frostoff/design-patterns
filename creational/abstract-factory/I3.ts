@@ -1,4 +1,4 @@
-import { ICar } from './interfaces';
+import { ICar } from './types';
 
 export default class I3 implements ICar {
   info(): string {
