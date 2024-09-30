@@ -1,43 +1,60 @@
 class Driver {
-	constructor(command) {
-		this.command = command;
-	}
+  constructor(command) {
+    this.command = command;
+  }
 
-	execute() {
-		this.command.execute();
-	}
-};
+  execute() {
+    this.command.execute();
+  }
+}
 
 class Engine {
-	constructor() {
-		this.state = false;
-	}
+  constructor() {
+    this.state = false;
+  }
 
-	on() {
-		this.state = true;
-	}
+  on() {
+    this.state = true;
+  }
 
-	off() {
-		this.state = false;
-	}
-};
+  off() {
+    this.state = false;
+  }
+}
 
 class OnStartCommand {
-	constructor(engine) {
-		this.engine = engine;
-	}
+  constructor(engine) {
+    this.engine = engine;
+  }
 
-	execute() {
-		this.engine.on();
-	}
-};
+  execute() {
+    this.engine.on();
+  }
+}
 
-class onSwitchOffCommand {
-	constructor(engine) {
-		this.engine = engine;
-	}
+class OnSwitchOffCommand {
+  constructor(engine) {
+    this.engine = engine;
+  }
 
-	execute() {
-		this.engine.off();
-	}
-};
+  execute() {
+    this.engine.off();
+  }
+}
+
+// Check engine status
+const engine = new Engine();
+console.log(engine);
+/*
+Engine { state: false }
+*/
+
+// Start Engine
+const onStartCommand = new OnStartCommand(engine);
+const driver = new Driver(onStartCommand);
+driver.execute();
+
+console.log(engine);
+/*
+Engine { state: true }
+*/
