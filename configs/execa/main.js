@@ -115,11 +115,14 @@ async function main() {
     await $(`npm update`, { stdio: ['pipe', 'pipe', 'pipe'], cleanup: true });
 
     // run commands to check for errors
-    console.log(`test building commands...`);
-    await $(`npm run dev && npm run build && npm run dev`, {
-      stdio: ['pipe', 'pipe', 'pipe'],
-      cleanup: true,
-    });
+    console.log(`Run regression tests...`);
+    await $(
+      `npm run tsx creational/abstract-factory/abstract-factory.ts && npm run tsx behavioral/observer/observer.ts && npm run tsx structural/decorator/decorator.ts`,
+      {
+        stdio: ['pipe', 'pipe', 'pipe'],
+        cleanup: true,
+      },
+    );
 
     // write logfile beside the script
     console.log(`Done successfully!`);
