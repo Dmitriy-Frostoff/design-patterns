@@ -15,6 +15,7 @@ export default async function runRegressionTests(writeErrorLogFile, logFile) {
       `npm run tsx creational/abstract-factory/abstract-factory.ts && npm run tsx behavioral/observer/observer.ts && npm run tsx structural/decorator/decorator.ts`,
       {
         stdio: ['pipe', 'pipe', 'pipe'],
+        verbose: 'full',
         cleanup: true,
       },
     );
