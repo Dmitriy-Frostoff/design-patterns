@@ -1,12 +1,10 @@
 interface ICount {
-  count: number;
-
   getCount(): number;
   increaseCount(): number;
 }
 
 class Counter implements ICount {
-  public count: number;
+  private count: number;
 
   private static instance: Counter | undefined;
 
