@@ -1,39 +1,4 @@
-interface ITeslaCar {
-  model: string;
-
-  price: number;
-
-  interior: string;
-
-  autopilot: boolean;
-  produce(): TeslaCar;
-}
-
-class TeslaCar implements ITeslaCar {
-  model: string;
-
-  price: number;
-
-  interior: string;
-
-  autopilot: boolean;
-
-  constructor(
-    model: string,
-    price: number,
-    interior: string,
-    autopilot: boolean,
-  ) {
-    this.model = model;
-    this.price = price;
-    this.interior = interior;
-    this.autopilot = autopilot;
-  }
-
-  produce(): TeslaCar {
-    return new TeslaCar(this.model, this.price, this.interior, this.autopilot);
-  }
-}
+import TeslaCar from './TeslaCar';
 
 // produce base auto
 const prototypeCar = new TeslaCar('S', 80000, 'black', false);
