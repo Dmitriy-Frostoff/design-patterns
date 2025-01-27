@@ -1,31 +1,4 @@
-interface ICount {
-  getCount(): number;
-  increaseCount(): number;
-}
-
-class Counter implements ICount {
-  private count: number;
-
-  private static instance: Counter | undefined;
-
-  constructor() {
-    if (typeof Counter.instance === 'object') {
-      return Counter.instance;
-    }
-
-    this.count = 0;
-    Counter.instance = this;
-  }
-
-  getCount(): number {
-    return this.count;
-  }
-
-  increaseCount(): number {
-    this.count += 1;
-    return this.count;
-  }
-}
+import Counter from './Counter';
 
 const myCount1 = new Counter();
 const myCount2 = new Counter();
