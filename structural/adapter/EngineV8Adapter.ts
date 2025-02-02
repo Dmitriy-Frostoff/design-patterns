@@ -1,9 +1,9 @@
-import { ICompliatedEngine, ISimpleEngine } from './types';
+import { IComplicatedEngine, ISimpleEngine } from './types';
 
 export default class EngineV8Adapter implements ISimpleEngine {
-  private engine: ICompliatedEngine;
+  private engine: IComplicatedEngine;
 
-  constructor(engine: ICompliatedEngine) {
+  constructor(engine: IComplicatedEngine) {
     this.engine = engine;
   }
 

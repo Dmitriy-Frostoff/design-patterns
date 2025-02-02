@@ -6,6 +6,6 @@ export interface ISimpleEngine {
   simpleInterface(): void;
 }
 
-export interface ICompliatedEngine {
+export interface IComplicatedEngine {
   complicatedInterface(): void;
 }
