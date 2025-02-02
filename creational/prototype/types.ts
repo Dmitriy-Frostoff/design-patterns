@@ -1,5 +1,3 @@
-import TeslaCar from './TeslaCar';
-
 export interface ITeslaCar {
   model: string;
 
@@ -9,5 +7,5 @@ export interface ITeslaCar {
 
   autopilot: boolean;
 
-  produce(): TeslaCar;
+  produce(): ITeslaCar;
 }

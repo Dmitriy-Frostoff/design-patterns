@@ -21,7 +21,7 @@ export default class TeslaCar implements ITeslaCar {
     this.autopilot = autopilot;
   }
 
-  produce(): TeslaCar {
+  produce(): ITeslaCar {
     return new TeslaCar(this.model, this.price, this.interior, this.autopilot);
   }
 }
