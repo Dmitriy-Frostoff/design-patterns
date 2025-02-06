@@ -16,7 +16,8 @@ class ArrayIterator {
 class ObjectIterator {
   constructor(el) {
     this.index = 0;
-    (this.keys = Object.keys(el)), (this.elements = el);
+    this.keys = Object.keys(el);
+    this.elements = el;
   }
 
   next() {
