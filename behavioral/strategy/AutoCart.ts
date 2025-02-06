@@ -1,9 +1,9 @@
 import { IAutoCart } from './types';
 
 export default class AutoCart implements IAutoCart {
-  protected discount: (amount: number) => number;
+  private discount: (amount: number) => number;
 
-  protected amount: number;
+  private amount: number;
 
   constructor(discount: (amount: number) => number) {
     this.discount = discount;
