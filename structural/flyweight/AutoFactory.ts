@@ -10,7 +10,7 @@ export default class AutoFactory implements IAutoFactory {
   }
 
   create(name: string): Auto {
-    const model = this.models[name];
+    const model: Auto | undefined = this.models[name];
 
     if (model) {
       return model;
