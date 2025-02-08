@@ -1,5 +1,9 @@
+export interface Idriver {
+  execute(method: ICommand): void;
+}
+
 export interface ICommand {
-  execute(method?: ICommand): void;
+  execute(): void;
 }
 
 export interface IEngine {
