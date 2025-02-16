@@ -17,3 +17,11 @@ export interface IConveyer {
 
   paint(): void;
 }
+
+export interface IConveyerFacade {
+  assembleCar(): void;
+
+  changeEngine(): void;
+
+  changeInterior(): void;
+}

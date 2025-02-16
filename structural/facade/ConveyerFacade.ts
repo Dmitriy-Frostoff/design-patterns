@@ -1,6 +1,6 @@
-import { IConveyer } from './types';
+import { IConveyer, IConveyerFacade } from './types';
 
-export default class ConveyerFacade {
+export default class ConveyerFacade implements IConveyerFacade {
   protected car: IConveyer;
 
   constructor(car: IConveyer) {
