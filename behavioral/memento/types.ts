@@ -17,8 +17,17 @@ export type PrimitiveDataArray =
   | symbol[]
   | null[]
   | undefined[]
-  | (string | number | bigint | boolean | symbol | null | undefined)[]
-  | PrimitiveDataObject[];
+  | PrimitiveDataObject[]
+  | (
+      | string
+      | number
+      | bigint
+      | boolean
+      | symbol
+      | null
+      | undefined
+      | PrimitiveDataObject
+    )[];
 
 export type PrimitiveDataObject = {
   [key: string]: PrimitiveData | PrimitiveDataArray | PrimitiveDataObject;
