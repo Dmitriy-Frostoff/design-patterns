@@ -19,7 +19,7 @@ master.show();
 //     incomer: Qiwi {   <-- Incomer: Qiwi
 //       name: 'Qiwi',
 //       balance: 500,
-//       incomer: undefined
+//       incomer: null
 //     }
 //   }
 // }
