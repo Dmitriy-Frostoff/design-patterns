@@ -7,7 +7,7 @@ export default class OnSwitchOffCommand implements ICommand {
     this.engine = engine;
   }
 
-  execute(method?: ICommand): void {
+  execute(): void {
     this.engine.off();
   }
 }
