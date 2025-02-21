@@ -1,11 +1,11 @@
-import { IAutoCart } from './types';
+import { IAutoCart, DiscountFunctionType } from './types';
 
 export default class AutoCart implements IAutoCart {
-  private discount: (amount: number) => number;
+  private discount: DiscountFunctionType;
 
   private amount: number;
 
-  constructor(discount: (amount: number) => number) {
+  constructor(discount: DiscountFunctionType) {
     this.discount = discount;
     this.amount = 0;
   }
