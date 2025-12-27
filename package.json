@@ -35,10 +35,10 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-import": "^2.32.0",
-    "execa": "^9.6.0",
+    "execa": "^9.6.1",
     "husky": "^9.1.7",
-    "prettier": "^3.7.2",
-    "tsx": "^4.20.6",
+    "prettier": "^3.7.4",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
